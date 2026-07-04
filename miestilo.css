@@ -1,6 +1,6 @@
 html{
     font-family:'Courier New', Courier, monospace;
-    background:linear-gradient(135deg, red,white );
+    background:linear-gradient(135deg, rgb(59, 212, 218),white );
 }
 body{
     max-width: 1000px;
