@@ -1,0 +1,87 @@
+html{
+    font-family:'Courier New', Courier, monospace;
+    background:linear-gradient(135deg, red,white );
+}
+body{
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    border:none;
+    box-shadow: 0 15px 40px black;
+    animation: aparecer 1s ease-in-out ;
+}
+h1{
+    font-size: 45px;
+    text-align: center;
+    color: rgb(214, 34, 34);
+    text-shadow: 3px 3px 10px rgb(187, 106, 106);
+    transition: 1 ease;
+}
+h2{
+    font-size: 30px;
+    color:rgb(216, 48, 48);
+    border-left: 6px solid rgb(209, 33, 33);
+    padding-left: 10px;
+}
+p,li{
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
+    color:rgb(0, 0, 0)
+}
+img{
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgb(54, 48, 48);
+    transition: 0.4 ease;
+    animation: LL 1s ease-in-out;
+}
+iframe{
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgb(121, 110, 110);
+}
+a{
+    color:rgb(236, 18, 18);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+h1:hover{
+    transform: scale(1.4);
+}
+img:hover{
+    transform: scale(1.4) rotate(3deg);
+}
+a:hover{
+    color: rgb(236, 18, 18);
+    text-decoration: underline;
+}
+h2:hover{
+    border-left: rgb(247, 243, 243) ;
+    padding-left: 14px;
+}
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transition: translateY(0);
+    }
+}
+@keyframes LL{
+    from{
+        opacity: 0;
+        transform: translateX(320px);
+    }
+    to{
+        opacity: 1;
+        transition: translateX(0);
+    }
+}
